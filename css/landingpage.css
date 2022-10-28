@@ -1,0 +1,219 @@
+/* Header ----------------------*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/landingpage/front.jpg);
+    background-size: cover;
+    background-position: center;
+} 
+.header-con {
+    width: 100%;
+}
+.header-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 380px;
+    background-color: var(--headerBack);
+}
+.header-h1 {
+    text-align: center;
+    font-size: var(--xl);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.header-p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+@media only screen and (min-width: 728px) {
+.header-con {
+    display: flex;
+    justify-content: center;
+}
+.header-text-box {
+    width: 670px;
+}
+.landingpage-header-button {
+    width: 600px;
+}
+.header-h1 {
+    font-size: var(--xxl);
+}
+}
+
+/* recommended products------------------*/
+.products-landingpage {
+    margin-bottom: 80px;
+}
+.products-landingpage-h2-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+.products-landingpage-h2-1 {
+    font-size: var(--xl);
+    font-weight: bold;
+}
+.products-landingpage-h2-2 {
+    font-size: var(--xl);
+    font-weight: bold;
+    color: var(--pink);
+}
+.recommended-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.product-wrap {
+    margin: 0 15px 15px 30px;
+    margin-bottom: 30px;
+    height: 396px;
+    color: var(--black);
+    width: 320px; 
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 3px 6px #00000029;
+    overflow: hidden;
+}
+.background-img {
+    height: 320px;
+    width: 320px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.stay {
+    width: 100px;
+    height: 60px;
+    margin: 0 15px 15px 0;
+    background-color: var(--pink);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.remove {
+    display: none;
+}
+.discount-value-1 {
+    text-align: center;
+    color: var(--white);
+    font-size: var(--sm);
+    font-weight: bold;
+}
+.discount-value-2 {
+    text-align: center;
+    color: var(--white);
+    font-size: var(--l);
+    font-weight: bold;
+}
+.product-text-wrap {
+    border-radius: 0 0 15px 15px;
+}
+.product-description {
+    margin: 0 10px;
+    font-size: var(--l);
+}
+.product-price {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin: 0 0 10px 10px;
+}
+
+@media only screen and (min-width: 728px) {
+    .products-landingpage-h2-1{
+        font-size: var(--xxl);
+    }
+    .products-landingpage-h2-2{
+        font-size: var(--xxl);
+    }
+    .recommended-con {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .product-link:nth-child(odd) {
+        margin-right: 15px;
+    }
+    .product-link:nth-child(even) {
+        margin-left: 15px;
+    }
+    .product-text-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 76px;
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+/* REVIEWS--------------- */
+.reviews {
+    width: 100%;
+}
+.reviews-h2-con {
+    margin: 0;
+}
+.reviews-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-bottom: 2px solid var(--pink);
+    padding-bottom: 25px;
+    margin-bottom: 70px;
+}
+.review-img {
+    border: 10px solid var(--pink);
+    border-radius: 100px;
+    margin-bottom: 65px;
+}
+.review-p {
+    text-align: center;
+    font-size: var(--m);
+    color: var(--grey);
+}
+.review-p-2 {
+    margin-top: 25px;
+    font-weight: bold
+}
+@media only screen and (min-width: 728px) {
+.review-card {
+    align-items: flex-start;
+    flex-direction: row;
+    width: 700px;
+    border-bottom: none;
+}
+.review-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.review-img {
+    width: 150px;
+    margin: 0 20px;
+}
+.review-text-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review-p {
+    width: 480px;
+    text-align: left;
+}
+}

@@ -1,0 +1,73 @@
+.navigation {
+    
+}
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 15px;
+}
+.nav-logo {
+    width: 150px;
+}
+.nav-burger {
+
+}
+.burger-menu {
+    color: var(--pink);
+    cursor: pointer;
+}
+.burger-menu:hover {
+    color: var(--grey);
+}
+.burger-menuactive {
+    color: var(--grey);
+}
+.x-menu {
+    cursor: pointer;
+    display: none;
+}
+/* Hidden nav */
+.hidden-nav {
+    position: absolute;
+    top: -300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 220px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 0 0 30px 30px;
+    opacity: 0;
+}
+.hidden-navScriptOpen {
+    top: 80px;
+    animation: hiddenNavOpen .2s forwards;
+}
+.hidden-navScriptClose {
+
+    animation: hiddenNavClose .2s forwards;
+}
+@keyframes hiddenNavOpen {
+    0% {opacity: 0; top: 80px;}
+    100% {opacity: 1;}
+}
+@keyframes hiddenNavClose {
+    0% {opacity: 1; top: 80px;}
+    99% {opacity: 0; top: 80px;}
+    100% { top: -300px;}
+}
+.nav-link {
+    font-weight: bold;
+    color: var(--white);
+    font-size: var(--sm);
+    margin-top: 20px;
+    margin-right: 15px;
+}
+.nav-link:hover {
+    color: var(--grey);
+}
+.nav-link:active {
+    color: var(--grey);
+}

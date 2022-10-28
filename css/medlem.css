@@ -1,0 +1,173 @@
+/* Header------------------ */
+.medlem-header {
+    background-image: url(../assets/medlem/subscribers.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+}
+.header-text-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    height: 400px;
+    width: 100%;
+}
+.header-h1 {
+    font-size: var(--xl);
+    color: var(--pink);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header-p-1 {
+    font-size: var(--sm);
+    text-align: center;
+    width: 280px;
+}
+@media only screen and (min-width: 728px) {
+    .header-text-con {
+        width: 660px;
+    }
+    .header-h1 {
+        font-size: var(--xxl);
+    }
+    .header-p-1 {
+        width: 550px;
+    }
+}
+
+/* Form------------------------------------ */
+.form-con {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 40px 0;
+}
+.form-conScript {
+    display: none;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+label {
+    font-size: var(--m);
+    color: var(--grey);
+    margin-bottom: 5px;
+}
+.form-input {
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: var(--sm);
+    color: var(--grey);
+}
+.textarea {
+    resize: none;
+    height: 220px;
+    font-size: var(--sm);
+    margin-bottom: 10px;
+    color: var(--grey);
+}
+.in-use-con {
+    color: var(--pink);
+    margin-bottom: 10px;
+}
+.submit-button {
+    cursor: pointer;
+    border: none;
+    background-color: var(--pink);
+    color: var(--white);
+    width: 130px;
+    height: 40px;
+    font-size: var(--sm);
+    border-radius: 20px;
+}
+.submit-button:hover {
+    transition: .2s;
+    color: var(--grey);
+}
+.submit-button:active {
+    color: var(--grey);
+}
+@media only screen and (min-width: 728px) {
+    form {
+        width: 660px;
+    }
+}
+
+/* Succes modal */
+.succes-modal {
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--headerBack);
+}
+.succes-modalScript {
+    display: flex;
+    animation: modalDisplay .2s forwards;
+}
+@keyframes modalDisplay {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.succes-h3 {
+    font-size: var(--xl);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.succes-name-p {
+    font-size: var(--sm);
+    font-weight: bold;
+    color: var(--pink);
+    margin-bottom: 15px;
+}
+.p-img-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.succes-name-happy {
+    font-size: var(--sm);
+    margin-bottom: 35px;
+    text-align: center;
+}
+.succes-img {
+    border-radius: 400px;
+    border: 5px solid var(--pink);
+    width: 180px;
+    margin-bottom: 45px;
+}
+.succes-inbox {
+    text-align: center;
+    font-size: var(--sm);
+    margin-bottom: 45px;
+}
+@media only screen and (min-width: 728px) {
+    .succes-h3 {
+        font-size: var(--xxl);
+        margin-bottom: 0;
+    }
+    .succes-name-p {
+        font-size: var(--xl);
+    }
+    .p-img-con {
+        flex-direction: column-reverse;
+    }
+    .succes-name-happy {
+        font-size: var(--l);
+    }
+    .medlem-button {
+        margin-bottom: 40px;
+    }
+}

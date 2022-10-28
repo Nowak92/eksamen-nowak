@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   
+    <!-- scripts -->
+    <script src="../javascript/navigation.js" defer></script>
+    <script src="../javascript/medlem.js" defer></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9eb3bf195d.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/generel.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/medlem.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navigation">
+        <div class="nav-wrap">
+            <div class="nav-logo-con"><a href="../index.html"><img class="nav-logo" src="../assets/navigation/smuknu_logo.png" alt="smukNu Logo"></a></div>
+            <div class="nav-burger">
+                <i class="fa-solid fa-bars fa-2xl burger-menu"></i>
+                <i class="x-menu fa-solid fa-x fa-2xl "></i>
+            </div>
+        </div>
+        <div class="hidden-nav">
+            <a class="nav-link" href="../index.html">FORSIDEN</a>
+            <a class="nav-link" href="../produkter/index.html">VORES PRODUKTER</a>
+            <a class="nav-link" href="../sundhed/index.html">SPØRG OM SUNDHED</a>
+            <a class="nav-link" href="index.html">BLIV MEDLEM</a>
+        </div>
+    </nav>
+
+<section class="medlem-header">
+    <div class="header-text-con">
+        <h1 class="header-h1">BLIV <br> MEDLEM</h1>
+        <p class="header-p-1">Opret dig som medlem og få flere fordele og nyheder I det øjeblik vi har dem.
+        <br><br>
+        Send gerne ris eller ros med når du melder dig ind, vi er altid parate til dialog.</p>
+    </div>
+</section>
+
+
+<section class="medlem-form">
+    <div class="form-con">
+        <form class="medlems-form">
+            <label class="" for="name">Fulde navn</label>
+
+            <input value="test" required class="form-input name" type="text" name="name">
+
+            <label class="" for="email">E-mail</label>
+
+            <input  value="test@mcdm.com" required class="form-input email" type="email" name="email">
+
+            <label class="" for="comments">Ris og/eller ros</label>
+
+            <textarea value="test" class="textarea"  
+            name="comments"></textarea>
+            <p class="in-use-con"></p>
+            <input class="submit-button" type="submit">
+        </form>
+    </div>
+
+    <div class="succes-modal">
+        <h1 class="succes-h3">TAK!</h1>
+        <p class="succes-name-p"><!-- script --></p>
+        <div class="p-img-con">
+            <p class="succes-name-happy">Vi er enormt glade for at få dig <br> som medlem.</p>
+            <img class="succes-img" src="../assets/medlem/product_2233009200.jpg" alt="organisk creme">
+        </div>  
+        <p class="succes-inbox">Kig I din inbox vi har sendt <br> en lille velkomst gave.</p>
+        <div class="uni-button medlem-button">
+            <a class="uni-button-a" href="../index.html">Til Forsiden</a>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-wrap">
+        <div class="some-con">
+            <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2xl some-icon"></i></a>
+            <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl some-icon"></i></a>
+            <a target="_blank" href="https://www.pinterest.dk/"><i class="fa-brands fa-pinterest fa-2xl some-icon"></i></a>
+            <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter fa-2xl some-icon"></i></a>
+            <a target="_blank" href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-2xl some-icon"></i></a>
+        </div>
+        <div class="contact-info-con">
+            <p class="footer-p">mail@smuk.nu</p>
+            <p class="footer-p">+45 12 33 45 33</p>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>

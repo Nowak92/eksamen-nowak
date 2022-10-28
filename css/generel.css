@@ -1,0 +1,101 @@
+
+:root {
+    /* fonts */
+   --font: 'Quicksand', sans-serif;  
+   /* Font sizes */
+   --xxl: 64px;
+   --xl: 54px;
+   --l: 21px;
+   --m: 20px;
+   --sm: 18px;
+   /* colors */
+   --pink: #fa96aa;
+   --black: #000000;
+   --grey: #707070;
+   --footerGrey: #D9D9D9;
+   --white: #ffffff;
+   --headerBack: #F7F0F2;
+}
+/* :hover {
+    transition: .2s;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font); 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a {
+    text-decoration: none;
+}
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+/* Button */
+.uni-button {
+    background-color: var(--pink);
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px #00000029;
+    height: 60px;
+    width: 280px;
+    
+}
+.uni-button-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    color: var(--white);
+    font-weight: bold;
+}
+.uni-button-a:hover {
+    color: var(--grey);
+}
+.uni-button-a:active {
+    color: var(--grey);
+}
+
+/* Bliv medlem----------------- */
+.bliv-medlem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--headerBack);
+}
+.bliv-medlem-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 390px;
+}
+.bliv-medlem-h3 {
+    font-size: var(--xl);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.bliv-medlem-p {
+    text-align: center;
+    font-size: var(--sm);
+    margin-bottom: 30px;
+    width: 280px;
+}
+.bliv-medlem-img-con {
+    display: none;
+    width: 360px;
+}
+.bliv-medlem-img {
+    margin: 10px;
+}
+@media only screen and (min-width: 728px) {
+    .bliv-medlem-img-con {
+        display: block;
+    }
+}
